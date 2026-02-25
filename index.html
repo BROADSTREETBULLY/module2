@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <form onSubmit="functionSubmit(event)">
+      <div>
+        <label> first Name: </label>
+        <input name="firstname" id="firstName" />
+      </div>
+      <div>
+        <label> last Name: </label>
+        <input name="lastname" id="lastName" />
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+<div>Your username: <span id="userName"></span></div>
+  </body>
+
+  <script>
+   function functionSubmit(event) {
+    event.preventDefault();
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    document.getElementById("userName").innerText=
+    firstName + " " + lastName;
+
+}
+
+  </script>
+</html>
