@@ -80,17 +80,7 @@ h1 {
     
 }
 
-.s-label {
-    position: sticky;
-    top: 0;
-    flex: 0 0 210px;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: underline;
-    font-size: 20px;
 
-    
-}
 
 .content {
     flex: 1;
@@ -109,5 +99,36 @@ ul {
 
 
 
+.s-label {
+    position: sticky;
+    top: 50px;
+    flex: 0 0 210px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 20px; 
+    padding-top: 13px;  
+}
+
+.label-container {
+    display: flex;
+    gap: 20px;
+}
+
+.sticky-label-column {
+    flex: 0 0 210px;
+}
+
+.content-column {
+    flex: 1;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
 
 
+.job-entry {
+    margin-bottom: 40px;
+}
