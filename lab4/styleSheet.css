@@ -6,14 +6,23 @@ body {
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
-    
-    
 }
+
 
 a {
     color: #0813de;
     text-decoration: none; 
     font-style: normal;
+}
+
+a:visited {
+    color: #0813de;
+    text-decoration: none; 
+    font-style: normal;
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 h1 {
@@ -26,6 +35,7 @@ img {
     border-radius: 10px; 
     opacity: 1;
     margin-bottom: 10px;
+    width: 350px;
 }
 
 .b-border {
@@ -112,4 +122,47 @@ footer {
     font-size: 40px;
     margin-right: 20px;
 
+}
+
+@media (max-width: 600px) {
+  body { 
+    padding: 10px;
+    background-color: pink;
+    }
+
+    .label-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+  .s-label {
+    position: static;
+    flex: none; 
+    margin-bottom: 10px; 
+    padding-left: 0;
+} 
+
+  .sticky-label-column {
+        flex: none;
+        width: 100%;
+    }
+    
+    .content-column {
+        flex: 1;
+        padding: 10px;
+    }
+
+footer {
+    text-align: right;
+    font-size: 35px;
+    margin-right: 20px;
+}
+img {
+    width: 100%;
+    max-width: 580px;   
+}
+
+.job-entry {
+    margin-bottom: 20px;
+}
 }
